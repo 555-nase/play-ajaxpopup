@@ -1,0 +1,3 @@
+@(id: String, url: String, parameter: String="")(implicit uri: String="")
+
+href="#@id" popup-url="@url" data-toggle="modal" popupid="@id" data="@parameter@if(parameter!="" && uri!=""){;}@if(uri!=""){uri=@uri}" 

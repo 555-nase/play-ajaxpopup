@@ -1,0 +1,8 @@
+@(title: String, id: String)(content: Html)
+<div class="disable">  </div>
+<div id="@id" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="@id+''+Label" aria-hidden="true">
+	<div class="modal-header">
+		<h3 id="myModalLabel">@title</h3>
+	</div>	
+	@content	
+</div>
